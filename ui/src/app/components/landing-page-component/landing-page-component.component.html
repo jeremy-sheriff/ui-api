@@ -1,0 +1,33 @@
+<main>
+  <div class="landing-area">
+    <h1>User Management Portal</h1>
+    <p>Manage and view all users in the system below:</p>
+      <p>We have New Updates for this version</p>
+      <p>App Version {{appVersion}}</p>
+      <img src="https://w7.pngwing.com/pngs/340/946/png-transparent-avatar-user-computer-icons-software-developer-avatar-child-face-heroes-thumbnail.png" height="70px" width="70px" alt="user">
+  </div>
+
+  <div class="table-container">
+    <p-table [value]="users" [paginator]="true" [rows]="15" [rowsPerPageOptions]="[5,10,20]" responsiveLayout="scroll">
+      <ng-template pTemplate="header">
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Year</th>
+          <th>Company</th>
+        </tr>
+      </ng-template>
+      <ng-template pTemplate="body" let-user>
+        <tr>
+          <td>{{ user.id }}</td>
+          <td>{{ user.name }}</td>
+          <td>{{ user.email }}</td>
+          <td>{{ user.year }}</td>
+          <td>{{ user.company }}</td>
+        </tr>
+      </ng-template>
+    </p-table>
+  </div>
+
+</main>

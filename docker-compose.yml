@@ -1,0 +1,36 @@
+version: '3.8'
+
+services:
+  api:
+    build:
+      context: ./api
+      dockerfile: Dockerfile
+    image: muhohoweb/express-api:1.0.2   # Specify the image name
+    container_name: express-api
+    ports:
+      - "3000:3000"
+    environment:
+      NODE_ENV: development
+    networks:
+      - app-network
+
+  ui:
+    build:
+      context: ./ui
+      dockerfile: Dockerfile
+      args:
+        API_URL: "http://localhost:32651/api"  # Set API_ENDPOINT as an environment variable in the container
+        IMAGE_VERSION: "1.0.8" # Set IMAGE_VERSION as an environment variable in the container
+    image: muhohoweb/angular-ui:1.0.8   # Specify the image name
+    container_name: angular-ui
+    ports:
+      - "4200:80"
+    environment:
+      API_URL: "http://localhost:32651/api"  # Set API_ENDPOINT as an environment variable in the container
+      IMAGE_VERSION: "1.0.8" # Set IMAGE_VERSION as an environment variable in the container
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge

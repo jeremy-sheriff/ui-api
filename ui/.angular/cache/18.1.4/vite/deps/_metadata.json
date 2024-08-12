@@ -1,0 +1,70 @@
+{
+  "hash": "37ad8a32",
+  "configHash": "f26baa92",
+  "lockfileHash": "88858bf0",
+  "browserHash": "8bb9a0ee",
+  "optimized": {
+    "@angular/common/http": {
+      "src": "../../../../../node_modules/@angular/common/fesm2022/http.mjs",
+      "file": "@angular_common_http.js",
+      "fileHash": "ab74ea0c",
+      "needsInterop": false
+    },
+    "@angular/core": {
+      "src": "../../../../../node_modules/@angular/core/fesm2022/core.mjs",
+      "file": "@angular_core.js",
+      "fileHash": "397a7be2",
+      "needsInterop": false
+    },
+    "@angular/platform-browser": {
+      "src": "../../../../../node_modules/@angular/platform-browser/fesm2022/platform-browser.mjs",
+      "file": "@angular_platform-browser.js",
+      "fileHash": "5219039f",
+      "needsInterop": false
+    },
+    "@angular/router": {
+      "src": "../../../../../node_modules/@angular/router/fesm2022/router.mjs",
+      "file": "@angular_router.js",
+      "fileHash": "4e5ea24a",
+      "needsInterop": false
+    },
+    "primeng/api": {
+      "src": "../../../../../node_modules/primeng/fesm2022/primeng-api.mjs",
+      "file": "primeng_api.js",
+      "fileHash": "938a2d7d",
+      "needsInterop": false
+    },
+    "primeng/button": {
+      "src": "../../../../../node_modules/primeng/fesm2022/primeng-button.mjs",
+      "file": "primeng_button.js",
+      "fileHash": "0b17df11",
+      "needsInterop": false
+    },
+    "primeng/table": {
+      "src": "../../../../../node_modules/primeng/fesm2022/primeng-table.mjs",
+      "file": "primeng_table.js",
+      "fileHash": "6bcadb91",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-KY46F4XV": {
+      "file": "chunk-KY46F4XV.js"
+    },
+    "chunk-KN2FNGF5": {
+      "file": "chunk-KN2FNGF5.js"
+    },
+    "chunk-43ZKK3D6": {
+      "file": "chunk-43ZKK3D6.js"
+    },
+    "chunk-S2AWYDXC": {
+      "file": "chunk-S2AWYDXC.js"
+    },
+    "chunk-K5NIXOD5": {
+      "file": "chunk-K5NIXOD5.js"
+    },
+    "chunk-HZEFKQQ5": {
+      "file": "chunk-HZEFKQQ5.js"
+    }
+  }
+}
